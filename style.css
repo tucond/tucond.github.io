@@ -1,0 +1,13 @@
+:root { --ink: #191923; --paper: #ffffff; --accent: #e61e3c; --gold: #ffdd00; --muted: #5b5b66; }
+@media (prefers-color-scheme: dark) { :root { --ink: #f2f2f5; --paper: #15151d; --muted: #a8a8b3; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink);
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif; line-height: 1.8; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+header img { width: 72px; height: 72px; border-radius: 50%; }
+h1 { font-size: 1.6rem; margin: 0; }
+h2 { font-size: 1.15rem; margin-top: 2em; border-left: 4px solid var(--accent); padding-left: 10px; }
+a { color: var(--accent); }
+.muted { color: var(--muted); font-size: .9rem; }
+footer { margin-top: 48px; font-size: .9rem; color: var(--muted); }
